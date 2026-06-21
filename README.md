@@ -1,111 +1,146 @@
-# Aircraft Maintenance Forecasting Dashboard
+# Fleet Airworthiness Planning Dashboard
 
 ## Overview
 
-This project is an Excel-based Aircraft Maintenance Forecasting Dashboard designed to simulate a real-world CAMO (Continuing Airworthiness Management Organisation) planning environment.
+The Fleet Airworthiness Planning Dashboard is an Excel-based CAMO (Continuing Airworthiness Management Organisation) planning tool developed to support aircraft maintenance forecasting and airworthiness monitoring.
 
-The dashboard forecasts upcoming maintenance requirements using:
+This project began as a maintenance forecasting system based on Flight Hours (FH) and Flight Cycles (FC) and has since been expanded into a fleet-level planning dashboard with maintenance prioritization, KPI monitoring, and governing limit determination.
 
-- Flight Hours (FH)
-- Flight Cycles (FC)
-- Daily aircraft utilization rates
-
-It automatically determines which maintenance limit will be reached first and assigns maintenance priorities to support planning decisions.
+The objective is to simulate real-world CAMO planning activities by providing maintenance forecasts, due-date calculations, aircraft prioritization, and management-level fleet visibility.
 
 ---
 
 ## Features
 
-### Flight Hour Monitoring
+### Maintenance Forecasting
 
-- Current Flight Hours tracking
-- Check interval calculation
-- Next due Flight Hours
-- Remaining Flight Hours
-- Daily Flight Hour utilization
-- Forecast due date estimation
-
-### Flight Cycle Monitoring
-
-- Current Flight Cycles tracking
-- Flight Cycle limit tracking
-- Remaining Flight Cycles
-- Daily Flight Cycle utilization
-- Estimated days remaining
-
-### Governing Limit Detection
-
-The dashboard automatically identifies whether:
-
-- Flight Hour (FH) limit
-- Flight Cycle (FC) limit
-
-will be reached first.
-
-This helps planners focus on the true controlling maintenance requirement.
+* Flight Hour (FH) based maintenance forecasting
+* Flight Cycle (FC) based maintenance forecasting
+* Remaining life calculations
+* Estimated days remaining calculations
+* Forecast maintenance due dates
 
 ### Maintenance Prioritization
 
-Aircraft are automatically categorized as:
+Aircraft are automatically classified into:
 
-- AOG Risk
-- Urgent
-- Plan
-- Normal
+* Normal
+* Plan
+* Urgent
+* AOG Risk
 
-based on remaining operational margin.
+based on remaining maintenance life and forecasted due dates.
 
-### Visual Management
+### Aircraft Master Consolidation
 
-Conditional formatting highlights:
+The Aircraft Master module consolidates:
 
-- Critical aircraft
-- Upcoming maintenance events
-- Priority status
+* FH maintenance status
+* FC maintenance status
+* Overall aircraft priority
+* Governing maintenance driver
 
-for quick decision making.
+The most restrictive maintenance limit automatically determines the aircraft's overall status.
 
----
+### Fleet KPI Dashboard
 
-## Example Use Case
+The dashboard provides a fleet-level overview including:
 
-A CAMO planner can use this dashboard to:
+* Fleet Size
+* Aircraft Due Within 30 Days
+* Urgent Checks
+* AOG Risks
+* Priority Distribution
+* Remaining FH Visualization
 
-1. Monitor fleet maintenance status.
-2. Forecast upcoming maintenance checks.
-3. Identify aircraft at risk of becoming overdue.
-4. Plan hangar slots and manpower requirements.
-5. Determine whether FH or FC is the governing maintenance driver.
+### Governing Driver Logic
 
----
+The system identifies whether an aircraft's maintenance requirement is driven by:
 
-## Skills Demonstrated
+* Flight Hours (FH)
+* Flight Cycles (FC)
 
-This project demonstrates:
-
-- Aviation maintenance planning
-- CAMO concepts
-- Aircraft utilization analysis
-- Maintenance forecasting
-- Excel formulas
-- Conditional formatting
-- Dashboard design
-- Data analysis
+allowing planners to quickly identify the controlling maintenance parameter.
 
 ---
 
-## Future Improvements
+## Dashboard Preview
 
-Potential future upgrades:
+### Fleet Airworthiness Planning Dashboard
 
-- Power BI integration
-- VBA automation
-- Maintenance cost forecasting
-- Component life tracking
-- Aircraft utilization trends
-- Fleet-level KPI dashboard
-- Python/Pandas version
+* KPI Cards
+* Priority Distribution Chart
+* Aircraft Master Summary
+* Remaining FH Analysis
+* Maintenance Priority Monitoring
 
+---
+
+## Project Structure
+
+```text
+Fleet Airworthiness Planning Dashboard
+│
+├── Aircraft Master
+├── FH Maintenance Forecasting
+├── FC Maintenance Forecasting
+├── Fleet KPI Dashboard
+├── Priority Classification Logic
+├── Governing Driver Determination
+└── Auto Forecast Calculations
+```
+
+---
+
+## Technologies Used
+
+* Microsoft Excel
+* Excel Tables
+* Structured References
+* XLOOKUP
+* COUNTIF
+* IF / IFS Logic
+* Conditional Formatting
+* Dashboard Design
+* Data Visualization
+
+---
+
+## CAMO Applications
+
+This project demonstrates practical concepts used within Continuing Airworthiness Management, including:
+
+* Maintenance Planning
+* Maintenance Forecasting
+* Fleet Monitoring
+* Airworthiness Status Tracking
+* Maintenance Prioritization
+* Fleet-Level Decision Support
+
+---
+
+## Future Enhancements
+
+Planned future upgrades include:
+
+* Component Life Tracking
+* Maintenance Cost Forecasting
+* Aircraft Utilization Trend Analysis
+* Power BI Integration
+* VBA Automation
+* Python/Pandas Version
+* Automated Maintenance Reporting
+
+---
+
+##Added Fleet Airworthiness Planning Dashboard (v2.0)
+
+- Added KPI cards
+- Added Aircraft Master sheet
+- Added Overall Priority calculation
+- Added Governing Driver logic
+- Added FH visualization charts
+- Improved CAMO planning workflow
 ---
 
 ## Author
