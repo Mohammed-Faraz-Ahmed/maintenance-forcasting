@@ -142,6 +142,17 @@ Planned future upgrades include:
 - Added FH visualization charts
 - Improved CAMO planning workflow
 ---
+Version 3.0
+
+Added Aircraft Utilization Analytics
+
+- Historical utilization tracking
+- Average daily FH calculation
+-  Average daily FC calculation
+-  Automatic maintenance forecasting
+-  Fleet utilization KPIs
+-  Utilization charts
+-  Dynamic forecast engine
 
 ## Author
 
